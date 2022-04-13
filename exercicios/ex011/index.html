@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5 </title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador. </p>
+
+    <picture>
+       <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+<!--A Tag picture ajuda a dinamizar o tamanho das imagens em diferentes tipos de telas. O segredo é criar imagens grande média e pequenas. Há uma dica bem válida : 
+
+começa com a imagens grande dentro da tag 
+
+depois usa-se o parâmetro source media-type e vai decrecendo para que possa acompanhar o tamanho da tela. 
+
+
+-->
+<h1>Reproduzindo áudio</h1>
+<p>Vamos aprender a reproduzir áudios em html5 </p>
+<audio src="midia/1.mp3" controls autoplay></audio>
+<!-- Para reproduzir um áudio pode ser feito dessa primeira maneira. 
+
+    Devemos criar a tag audio que pedirá um source. Mas deve-se criar parâmetros também para que se apareça o reprodutor. Os dois parâmetros usados são : 
+
+    - controls : vai aparecer os controles de play, pause , etc . 
+
+    - autoplay : de tocar assim que o site abrir , porém nem sempre funciona.
+ 
+    São 3 os formatos aceitos em HTML basicamente : MP3 , WAV , OGG .-->
+<p>
+    <audio preload="metadata" controls>
+        <source src="midia/9.mp3" type="audio/mpeg">
+
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midia/9.mp3">Clique aqui para baixar o audio </a></p>
+
+    </audio>
+
+</p>
+
+
+</body>
+</html>

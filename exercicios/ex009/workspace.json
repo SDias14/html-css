@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "C:\\Users\\samuel.dias\\Desktop\\JAVASCRIPT"
+		},
+		{
+			"path": "C:\\Users\\samuel.dias\\Desktop\\site casamento"
+		},
+		{
+			"path": "C:\\Users\\samuel.dias\\Desktop\\samueldias_ds1_ag16"
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "pwa-chrome",
+				"request": "launch",
+				"name": "Open index.html",
+				"file": "c:\\Users\\samuel.dias\\Documents\\estudos\\html-css\\exercícios\\ex009\\index.html"
+			}
+		]
+	}
+}
