@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+    }
+/* visited é uma pseudoclasse, ela faz com que um link visitado mude de cor.  */
+    a:visited{
+        color: darkred;
+    }
+
+    a:hover{
+
+        text-decoration: underline ;
+        color: black;
+
+    }
+
+    a:active{
+        color: yellow;
+    }
+
+    /* Este é um exemplo de um pseudo-elemento. O pseudo-elemento é usado para manipular conteudo. ele é referenciado com dois pontos.Sempre nos lados perifericos do texto. Tambem temos como colocar pseudo-elementos juntos com classes.  */
+    
+    
+ .especial{
+     background-color: darkred;
+     color: white;
+ }
+
+
+    
+    
+    .especial::after{
+        content: '>';
+        text-decoration: none;
+        font-weight: normal;
+        color: darkgrey;
+    }
+
+    .especial::before{
+        content: '<';
+        text-decoration: none;
+        font-weight: normal;
+        color: darkgrey;
+    }
+
+/* revisão : seletores personalizados.
+
+
+# = id
+. = class
+: = pseudo-classes
+::=pseudo - elementos 
+> = children (heranças)
+
+
+
+*/
+
+
+
+</style>
+
+
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" class="especial">Canal do Youtube</a></li>
+        <li><a href="http://www.cursoemvideo.com" class="especial">Site do curso em video</a></li>
+    </ul>
+</body>
+</html>
