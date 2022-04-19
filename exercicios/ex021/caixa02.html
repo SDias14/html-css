@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    margin: 0px;
+
+
+}
+
+header{
+    
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+}
+
+article{
+    background-color: lightgray ;
+}
+
+article > aside {
+background-color: rgb(112, 106, 106);
+}
+
+nav{
+    background-color: rgb(97, 94, 94) ;
+    padding: 3px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+    <!--Tags de agrupamento:geralmente foram duas :divs e span-->
+    
+    <!--Cabeçalho do site-->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="www.google.com.br" target="_blank">GOOGLE</a>
+            <a href="www.jw.org" target="_blank">JW</a>
+            <a href="www.cursoemvideo.com.br" target="_blank"> CURSO EM VIDEO </a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+
+    </header>
+    <!--parte principal do site-->
+    <main>
+        <section id="assuntos">
+
+            <h2>Variedades</h2>
+           
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, ex totam rerum cumque natus repellendus tempore laudantium, necessitatibus mollitia fugit pariatur, adipisci fugiat atque! Quis temporibus qui quam nemo exercitationem?</p>
+
+
+        </section>
+
+        <section id="noticias">
+            <article>
+               
+                <h2>Artigo sobre o Brasil </h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, repudiandae omnis quo totam reiciendis itaque. Aliquid tempora quia ex dolorum maxime cumque suscipit, architecto quisquam natus odit nihil nostrum minima.</p>
+                
+                <aside>
+                    
+                    <p>artigo escrito por Gustavo Guanabara</p>
+
+                </aside>
+
+            </article>
+            
+
+            <article>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente similique asperiores ab, ipsa perferendis culpa tempore aliquid, dolores nisi voluptas ratione numquam aspernatur voluptates rerum vero quae debitis dicta sint.</p>
+
+
+            </article>
+
+        </section>
+
+    </main>
+    <!--rodapé do site-->
+    <footer>
+        <p>Desenvolvido pelo curso em Vídeo</p>
+        
+    </footer>
+
+</body>
+</html>
