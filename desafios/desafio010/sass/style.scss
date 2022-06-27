@@ -16,12 +16,13 @@
 --cor3:#2fa866;
 --cor4:#1a5c37;
 --cor5:#063d1e;
+--cor6:#ffffff;
 
 --fonte-padrao: arial, verdana,helvetica, sans-serif;  ;
 
 --fonte-destaque:'Open Sans', sans-serif;
 
---fonte-android: 'android', cursive;
+--fonte-android: 'android';
 }
 
 *{
@@ -39,4 +40,22 @@ body {
 .color-title{
     color: var(--cor0);
     background-image: linear-gradient(  var(--cor3), var(--cor4));
+}
+
+.principal{
+background-color: var(--cor6);
+}
+
+.android-family{
+  font-family: var(--fonte-android);
+  color: var(--cor4);
+}
+
+.main-text{
+  color: var(--cor5);
+  font-family: var(--fonte-padrao);
+}
+
+.subtitles{
+  background-color: #2fa86533;
 }
